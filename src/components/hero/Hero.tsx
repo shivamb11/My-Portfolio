@@ -34,7 +34,7 @@ const sliderVariations: Variants = {
     transition: {
       repeat: Infinity,
       repeatType: "mirror",
-      duration: 20,
+      duration: 40,
     },
   },
 };
@@ -50,10 +50,17 @@ function Hero() {
           variants={textVariations}
         >
           <motion.h2>SHIVAM BANSAL</motion.h2>
-          <motion.h3>Full Stack Web Developer</motion.h3>
-          <motion.div className="buttons">
-            <motion.button>See the Latest Works</motion.button>
-            <motion.button>Contact Me</motion.button>
+          <motion.h3>
+            Full Stack <br />
+            Web Developer
+          </motion.h3>
+          <motion.div className="links">
+            <motion.a href="/#projects" className="link-1">
+              See the Latest Works
+            </motion.a>
+            <motion.a href="/#contact" className="link-2">
+              Contact Me
+            </motion.a>
           </motion.div>
           <motion.img
             animate="scrollButton"

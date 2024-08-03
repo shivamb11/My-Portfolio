@@ -29,11 +29,14 @@
         font-size: 80px;
       }
 
-      .buttons {
+      .links {
         display: flex;
         gap: 10px;
+        position: relative;
 
-        button {
+        a {
+          position: absolute;
+          z-index: 2;
           background-color: transparent;
           color: white;
           padding: 20px 25px;
@@ -41,10 +44,15 @@
           border-radius: 5px;
           cursor: pointer;
         }
+
+        .link-2 {
+          margin-left: 220px;
+        }
       }
 
       img {
         width: 50px;
+        margin-top: 40px;
       }
     }
   }
@@ -69,5 +77,6 @@
     font-weight: 500;
     white-space: nowrap;
     color: rgba(128, 128, 128, 0.085);
+    z-index: 0;
   }
 }
