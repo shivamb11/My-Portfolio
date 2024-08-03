@@ -1,0 +1,75 @@
+.projects {
+  position: relative;
+
+  .progress {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    padding-top: 50px;
+    text-align: center;
+    color: orange;
+    font-size: 36px;
+
+    .progress-bar {
+      height: 10px;
+      background-color: white;
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1326px;
+    margin: auto;
+    height: 100%;
+    overflow: hidden;
+
+    .wrapper {
+      max-height: 1366px;
+      height: 80%;
+      margin: 100px auto 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+
+      .image-container {
+        flex: 1;
+        height: 50%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: fill;
+        }
+      }
+
+      .text-container {
+        flex: 1;
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        h2 {
+          font-size: 72px;
+        }
+
+        p {
+          color: gray;
+          font-size: 20px;
+        }
+
+        a {
+          background-color: orange;
+          width: 200px;
+          padding: 10px;
+          color: black;
+          text-align: center;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}

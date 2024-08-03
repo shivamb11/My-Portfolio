@@ -1,0 +1,29 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1326px;
+
+    h2 {
+      font-size: 20px;
+    }
+
+    .socials {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      img {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
