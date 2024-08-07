@@ -1,3 +1,5 @@
+@use "../../mixin" as *;
+
 .parallax {
   height: 100dvh;
   width: 100dvw;
@@ -20,6 +22,11 @@
     width: 100%;
     position: absolute;
     z-index: 3;
+
+    @include mobile {
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
 
   .planets {

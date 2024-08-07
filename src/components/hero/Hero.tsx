@@ -71,7 +71,7 @@ function Hero() {
         </motion.div>
       </div>
       <div className="image-container">
-        <img src="/hero.png" alt="" />
+        <img src="/hero.png" alt="img" />
       </div>
       <motion.div
         className="slider-container"

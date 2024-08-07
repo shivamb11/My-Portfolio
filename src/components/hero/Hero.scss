@@ -1,3 +1,5 @@
+@use "../../mixin" as *;
+
 .hero {
   height: calc(100vh - 100px);
   display: flex;
@@ -6,10 +8,15 @@
   position: relative;
   background: linear-gradient(180deg, #0c0c1d, #111132);
 
+  @include mobile {
+    flex-direction: column;
+  }
+
   .wrapper {
-    width: 1326px;
+    max-width: 1326px;
     height: 100%;
-    margin: auto;
+    width: 100%;
+    margin: 0 auto;
 
     .text-container {
       display: flex;
@@ -19,20 +26,44 @@
       gap: 40px;
       width: 60%;
 
+      @include mobile {
+        height: 60%;
+        width: 100%;
+        align-items: center;
+        gap: 30px;
+      }
+
       h2 {
         font-size: 32px;
         letter-spacing: 10px;
         color: rebeccapurple;
+
+        @include mobile {
+          font-size: 28px;
+          text-align: center;
+        }
       }
 
       h3 {
         font-size: 80px;
+
+        @include mobile {
+          font-size: 40px;
+          text-align: center;
+        }
       }
 
       .links {
         display: flex;
         gap: 10px;
         position: relative;
+        height: 100%;
+        width: 100%;
+        max-height: 62px;
+
+        @include mobile {
+          justify-content: center;
+        }
 
         a {
           position: absolute;
@@ -43,16 +74,33 @@
           border: 1px solid white;
           border-radius: 5px;
           cursor: pointer;
+
+          @include mobile {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: small;
+            padding: 15px 20px;
+          }
+        }
+
+        .link-1 {
+          @include mobile {
+            margin-right: 170px;
+          }
         }
 
         .link-2 {
           margin-left: 220px;
+          @include mobile {
+            margin-left: 170px;
+          }
         }
       }
 
       img {
         width: 50px;
-        margin-top: 40px;
       }
     }
   }
@@ -63,6 +111,15 @@
     height: 100%;
     top: 0;
     right: 0;
+
+    @include mobile {
+      top: unset;
+      bottom: 0;
+      left: 0;
+      height: 40%;
+      width: 75%;
+      margin: auto;
+    }
 
     img {
       width: 100%;

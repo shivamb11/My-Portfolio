@@ -78,13 +78,13 @@ function Contact() {
           className="phone-svg"
           initial={{ opacity: 1 }}
           whileInView={{ opacity: 0, zIndex: -1 }}
-          transition={{ delay: 3, duration: 1 }}
+          transition={{ delay: 2.5, duration: 1 }}
         >
           <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
             <motion.path
               initial={{ pathLength: 0 }}
               animate={isInView && { pathLength: 1 }}
-              transition={{ duration: 3 }}
+              transition={{ duration: 3.5 }}
               strokeWidth={0.2}
               fill="none"
               d="M28.189,16.504h-1.666c0-5.437-4.422-9.858-9.856-9.858l-0.001-1.664C23.021,4.979,28.189,10.149,28.189,16.504z
@@ -107,12 +107,12 @@ function Contact() {
           ref={formRef}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 4, duration: 1 }}
+          transition={{ delay: 3.5, duration: 1 }}
           onSubmit={sendEmail}
         >
           <input type="text" name="name" placeholder="Name" required />
           <input type="email" name="email" placeholder="Email id" required />
-          <textarea name="message" rows={8} placeholder="Message" required />
+          <textarea name="message" placeholder="Message" required />
           <button>Submit</button>
           {isSuccess && "Success"}
           {isError && "Something went wrong.."}
