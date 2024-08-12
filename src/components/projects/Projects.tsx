@@ -9,7 +9,7 @@ const projects = [
     title: "Elite Estate",
     img: "/projects/elite-estate.png",
     description:
-      "A modern real estate platform designed to empower property owners with an effortless way to list their properties for sale or rent. Elite Estate provides viewers with an intuitive and interactive experience, allowing them to explore detailed listings, view high-quality images, and connect directly with property owners for a seamless transaction process.",
+      "A modern real estate platform designed to empower property owners with an easy way to list properties for sale or rent. Elite Estate offers viewers an intuitive, interactive experience, allowing them to explore detailed listings, view high-quality images, and connect directly with owners for a seamless transaction.",
     liveLink: "http://the-elite-estate.vercel.app/",
   },
   {
@@ -25,7 +25,7 @@ const projects = [
     title: "The Wild Oasis",
     img: "/projects/the-wild-oasis.png",
     description:
-      "The Wild Oasis is a staff-centric website designed to streamline hotel cabin bookings. It focuses on efficient management of guests, cabins, and reservations, offering customizable features that cater to the unique needs of hotel staff. This platform enhances operational efficiency and provides a user-friendly experience for managing bookings and guest interactions.",
+      "The Wild Oasis is a staff-centric website that simplifies hotel cabin bookings. It offers efficient management of guests, cabins, and reservations, with customizable features tailored for hotel staff, enhancing operational efficiency and user experience.",
     liveLink: "https://the-wild-oasis-vite.vercel.app/",
   },
   {
